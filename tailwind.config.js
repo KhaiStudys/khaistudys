@@ -6,13 +6,16 @@ module.exports = {
   ],
   theme: {
     screens: {
-      tablet: "640px",
-
-      laptop: "1024px",
-
-      desktop: "1280px",
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Poppins", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
