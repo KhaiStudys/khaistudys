@@ -10,7 +10,9 @@ export default function Project({ title, desc, live, github }) {
           <Link href={live}>View Live</Link>
         </button>
         <button className="px-4 py-2 rounded bg-transparent underline">
-          <Link href={github}>View on Github</Link>
+          <a rel="noreferrer" href={github} target="_blank">
+            View on Github
+          </a>
         </button>
       </div>
     </div>
