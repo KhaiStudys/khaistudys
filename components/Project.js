@@ -9,7 +9,7 @@ export default function Project({ title, desc, live, github }) {
         <button className="px-4 py-2 rounded bg-yellow-200">
           <Link href={live}>View Live</Link>
         </button>
-        <button className="px-4 py-2 rounded bg-transparent">
+        <button className="px-4 py-2 rounded bg-transparent underline">
           <Link href={github}>View on Github</Link>
         </button>
       </div>
