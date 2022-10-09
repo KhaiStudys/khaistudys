@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Project({ title, desc, live, github }) {
+export default function Project({ title, desc, live, readmore }) {
   return (
     <div className=" flex flex-col gap-3 mt-6 p-6 w-full lg:w-[45%] xl:max-w-[30%] rounded border border-gray-300">
       <h3 className="text-xl font-medium">{title}</h3>
@@ -10,8 +10,8 @@ export default function Project({ title, desc, live, github }) {
           <Link href={live}>View Live</Link>
         </button>
         <button className="px-4 py-2 rounded bg-transparent underline">
-          <a rel="noreferrer" href={github} target="_blank">
-            View on Github
+          <a rel="noreferrer" href={readmore}>
+            Read more
           </a>
         </button>
       </div>
